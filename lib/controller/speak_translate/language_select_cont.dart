@@ -91,10 +91,12 @@ class LanguageSelectController extends GetxController {
 
   void updateLeftLanguage(String language) {
     leftLanguage.value = language;
+    filteredLanguages.value = languages;
   }
 
   void updateRightLanguage(String language) {
     rightLanguage.value = language;
+    filteredLanguages.value = languages;
   }
 
   String? getCountryCode(String language) {

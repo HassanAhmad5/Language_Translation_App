@@ -1,4 +1,6 @@
+import 'package:all_language_translator/view/phrases/phrases_view.dart';
 import 'package:all_language_translator/view/speak_translate/speak_translate_view.dart';
+import 'package:all_language_translator/view/speech_to_text/speech_to_text_view.dart';
 import 'package:flutter/material.dart';
 import '../widget/reuseable_widgets.dart';// Replace with the actual import for HomeWidget
 
@@ -9,11 +11,11 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     // List of icons and texts for the grid
     final List<Map<String, dynamic>> homeItems = [
-      {'icon': Icons.g_translate, 'text': 'Speak & Translate', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => SpeakTranslateView()));}},
-      {'icon': Icons.translate_rounded, 'text': 'Speech to Text', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => SpeakTranslateView()));}},
+      {'icon': Icons.g_translate, 'text': 'Speak & Translate', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => const SpeakTranslateView()));}},
+      {'icon': Icons.translate_rounded, 'text': 'Speech to Text', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => SpeechToTextView()));}},
       {'icon': Icons.transcribe, 'text': 'Text to Speech', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => SpeakTranslateView()));}},
       {'icon': Icons.qr_code_scanner, 'text': 'OCR', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => SpeakTranslateView()));}},
-      {'icon': Icons.message, 'text': 'Phrases', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => SpeakTranslateView()));}},
+      {'icon': Icons.message, 'text': 'Phrases', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => PhrasesView()));}},
       {'icon': Icons.star, 'text': 'Favorite', 'function': () {Navigator.push(context, MaterialPageRoute(builder: (context) => SpeakTranslateView()));}},
     ];
 

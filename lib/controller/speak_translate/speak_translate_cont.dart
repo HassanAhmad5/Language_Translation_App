@@ -1,4 +1,5 @@
 import 'package:flutter/services.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:get/get.dart';
 import 'package:translator/translator.dart';
 
@@ -62,5 +63,6 @@ class SpeakTranslateController extends GetxController {
       print("Failed to start listening: ${e.message}");
     }
   }
+
 
 }
